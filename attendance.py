@@ -34,15 +34,15 @@ trainimage_path = "TrainingImage"
 #     "/StudentDetails/studentdetails.csv"
 # )
 # -------------
-# ✅ CHANGE MADE: Ensure both folders exist before using
+
 if not os.path.exists(trainimage_path):
     os.makedirs(trainimage_path)
 
-if not os.path.exists("TrainingImageLabel"):  # ✅ CHANGE MADE
-    os.makedirs("TrainingImageLabel")         # ✅ CHANGE MADE
+if not os.path.exists("TrainingImageLabel"):  
+    os.makedirs("TrainingImageLabel")        
 
 studentdetail_path = (
-    "StudentDetails/studentdetails.csv"       # ✅ CHANGE MADE: removed leading '/'
+    "StudentDetails/studentdetails.csv"       
 )
 # -----------------------------------
 attendance_path = "Attendance"
